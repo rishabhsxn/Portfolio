@@ -26,7 +26,23 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    background:black
+}
+::-webkit-scrollbar {
+    width: 10px
+}
 
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(255, 255, 255) , rgb(141, 137, 137) , white);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover { 
+    background: linear-gradient( rgb(39, 36, 36), rgb(177, 174, 174) , rgb(39, 36, 36));
+
+}
 #loading{
     position:fixed;
     height: 100vh;
@@ -68,20 +84,7 @@ html{
     color: whitesmoke;
     font-size: 40px;
 }
-/* ::-webkit-scrollbar {
-    width: 11px
-}
 
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(rgb(255, 255, 255) , rgb(66, 60, 60) , white);
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover { 
-    background: linear-gradient( rgb(39, 36, 36), rgb(177, 174, 174) , rgb(39, 36, 36));
-
-} */
 
 /*-------mobile version---------*/
 #coming-soon{
@@ -94,19 +97,19 @@ html{
 #coming-soon h1{
     color: black;
     animation: animate-coming-soon 4s linear forwards;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 @keyframes animate-coming-soon{
     0%{
-        color: teal;
+        color: goldenrod;
         opacity: 0;
     }
     50%{
-        color: teal;
+        color: goldenrod;
         opacity: 0.5;
     }
     100%{
-        color: teal;
+        color: goldenrod;
         opacity: 1;
     }
 }
@@ -1609,7 +1612,7 @@ transition: .5s;
     #header .nav-bar .brand img{
         position: absolute;
         left:30px;
-        top: 0vh;
+        top: 0.5vh;
         height:8.5vh;
      }
     #loading{
