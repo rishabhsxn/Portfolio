@@ -83,6 +83,34 @@ html{
 
 } */
 
+/*-------mobile version---------*/
+#coming-soon{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,black,rgb(7, 7, 12));
+}
+#coming-soon h1{
+    color: black;
+    animation: animate-coming-soon 4s linear forwards;
+    animation-delay: 2s;
+}
+@keyframes animate-coming-soon{
+    0%{
+        color: teal;
+        opacity: 0;
+    }
+    50%{
+        color: teal;
+        opacity: 0.5;
+    }
+    100%{
+        color: teal;
+        opacity: 1;
+    }
+}
+
 #particles-js{
     position: absolute;
     top:0vh;
@@ -114,9 +142,9 @@ html{
 
 #header .nav-bar .brand img{
    position: absolute;
-   left:50px;
-   top: 5px;
-   height:8vh;
+   left:30px;
+   top: 0vh;
+   height:9vh;
 }
 
 /* hamburger background */
@@ -1517,6 +1545,9 @@ transition: .5s;
 
 @media (min-width: 1200px){
 
+    #coming-soon{
+        display: none;
+    }
     /* header only */
     #header .hamburger {
 		display: none;
@@ -1548,8 +1579,61 @@ transition: .5s;
 }
 
 
-@media (max-width: 1199px){
+@media (min-width:700px) and (max-width: 1199px){
     #header .header .list{
+        display: none;
+    }
+    #home{
+        display: none;
+    }
+    #about{
+        display: none;
+    }
+    #skills{
+        display: none;
+    }
+    #projects{
+        display: none;
+    }
+    #certificates{
+        display: none;
+    }
+    #contact{
+        display: none;
+    }
+    
+}
+
+
+@media (max-width:699px){
+    #header .nav-bar .brand img{
+        position: absolute;
+        left:30px;
+        top: 1vh;
+        height:9vh;
+     }
+    #loading{
+        display: none;
+    }
+    #home{
+        display: none;
+    }
+    #about{
+        display: none;
+    }
+    #skills{
+        display: none;
+    }
+    #projects{
+        display: none;
+    }
+    #certificates{
+        display: none;
+    }
+    #contact{
+        display: none;
+    }
+    .footer{
         display: none;
     }
 }
