@@ -1172,60 +1172,136 @@ cursor: pointer;
     font-size: 18px;
     color: goldenrod;
     margin-left:10px;
-    margin-top:0.5vh
+    margin-top:1vh
+}
+#projects .main .container-projects .project-item .details-projects h3{
+    color:grey;
+    margin-left:22px;
+    font-size: 30px;
+    margin-top:15px;
+    margin-bottom: -10px;
 }
 #projects .main .container-projects .project-item .details-projects ul{
-    font-size: 20px;
-    margin-top:4vh;
+    font-size: 18px;
+    margin-top:3vh;
     color:white;
     margin-left:25px;
     margin-right: 20px;
     text-align: justify;
 }
-#projects .main .container-projects .project-item .details-projects ul .more{
-    display: none;
+#projects .main .container-projects .project-item .details-projects ul li{
+    margin-top: 14px;
 }
-#projects .main .container-projects .project-item .details-projects ul .more-2{
-    display: none;
+
+#projects .main .container-projects .project-item .details-projects .project-playstore{
+    position: absolute;
+    bottom: 1vh;
+    left: 20px;
+    height: 35px;
+    background: white;
+    width: 35px;
+    border-radius: 50%;
+    box-shadow: 0 7px 20px rgba(255, 255, 255, 0.507);
 }
-#projects .main .container-projects .project-item .details-projects .read-more{
-    margin-top: 20px;
-    background: #007bb6;
-    font-size: 22px;
-    outline: none;
-    color: white;
-    border:none;
+#projects .main .container-projects .project-item .details-projects .project-playstore img{
+    height: 80%;
+    width:80%;
     position: relative;
-    left:35%;
-    cursor: pointer;
-    padding: 3px;
+    top: 4px;left: 6px;
 }
-#projects .main .container-projects .project-item .details-projects .project-icons-1{
+#projects .main .container-projects .project-item .details-projects .project-playstore:hover{
+    box-shadow: 0px 3px 2px whitesmoke;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.8);
+}
+
+#projects .main .container-projects .project-item .details-projects .projects-github{
     position: absolute;
     bottom: 1vh;
-    left: 0px;
-    height: 40px;
-    width: 40px;
+    left: 0vh;
 }
-#projects .main .container-projects .project-item .details-projects .project-icons-1:hover{
-    box-shadow: 0px 3px 2px whitesmoke;
+#projects .main .container-projects .project-item .details-projects .projects-github li{
+    list-style: none;
 }
-#projects .main .container-projects .project-item .details-projects .project-icons-2{
-    position: absolute;
-    bottom: 1vh;
-    left: 2px;
-    height: 45px;
-    width: 45px;
+#projects .main .container-projects .project-item .details-projects .projects-github li a{
+    position: relative;
+    width:35px;
+    height:35px;
+    display:block;
+    text-align:center;
+    margin-right: 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration:none;
+    box-shadow: 0 7px 20px rgba(255, 255, 255, 0.507);
+    background: rgb(255, 255, 255);
+    transition: .5s;
 }
-#projects .main .container-projects .project-item .details-projects .project-icons-2:hover{
-    box-shadow: 0px 3px 2px whitesmoke;
+#projects .main .container-projects .project-item .details-projects .projects-github li a:hover{
+    box-shadow: 0 2px 5px rgba(0,0,0,0.8);
+    text-decoration:none;
 }
-#projects .main .container-projects .project-item .details-projects .fa{
-    height: 100%;
+#projects .main .container-projects .project-item .details-projects .projects-github li a .fa{
     width: 100%;
-    color: white;
-    font-size: 45px;
-    text-align: center;
+    height:100%;
+    background: linear-gradient(30deg, #fff, rgb(168, 159, 159));
+    border-radius: 50%;
+    line-height: calc(60px - 35px);
+    font-size:25px;
+    color: #262626;
+    transition: .5s;
+}
+#projects .main .container-projects .project-item .details-projects .projects-youtube{
+    position: absolute;
+    bottom: 1vh;
+    left: 10%;
+}
+#projects .main .container-projects .project-item .details-projects .projects-youtube li{
+    list-style: none;
+}
+#projects .main .container-projects .project-item .details-projects .projects-youtube li a{
+    position: relative;
+    width:35px;
+    height:35px;
+    display:block;
+    text-align:center;
+    margin-right: 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration:none;
+    box-shadow: 0 7px 20px rgba(255, 255, 255, 0.507);
+    background: rgb(255, 255, 255);
+    transition: .5s;
+}
+#projects .main .container-projects .project-item .details-projects .projects-youtube li a:hover{
+    box-shadow: 0 2px 5px rgba(0,0,0,0.8);
+}
+#projects .main .container-projects .project-item .details-projects .projects-youtube li a .fa{
+    width: 100%;
+    height:100%;
+    background: linear-gradient(30deg, #fff, rgb(168, 159, 159));
+    border-radius: 50%;
+    line-height: calc(60px - 35px);
+    font-size:25px;
+    color: #262626;
+    transition: .5s;
+}
+#projects .main .container-projects .project-item .details-projects .projects-youtube li a:hover .fa{
+    color: red;
+}
+#projects .main .container-projects .project-item .details-projects .other{
+    position: absolute;
+    bottom: 1vh;
+    right: 10px;
+}
+#projects .main .container-projects .project-item .details-projects .other h1{
+    font-size: 20px;
+}
+#projects .main .container-projects .project-item .details-projects .other a{
+    text-decoration: none;
+    color: cyan;
+    font-size: 20px;
 }
 #projects .main .container-projects .project-item .photo-projects{
     width: 50%;
