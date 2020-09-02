@@ -1148,47 +1148,88 @@ cursor: pointer;
 #projects .main .container-projects .project-item .details-projects{
     width:50%;
     background: linear-gradient(to right, rgb(0, 0, 0), rgba(53, 52, 52, 0.445) 50%,  black);
-    height: 370px;
+    height: 470px;
+    position: relative;
 }
 #projects .main .container-projects .project-item .details-projects h1{
-    margin-top:2vh;
-    font-size: 35px;
-    margin-left:2.5vh;
+    margin-top:1.8vh;
+    font-size: 30px;
+    margin-left:10px;
     color: whitesmoke;
+    display: inline-block;
+}
+#projects .main .container-projects .project-item .details-projects .tag-box{
+    display: inline-block;
+    position: absolute;
+    top: 2.8vh;
+    right: 20px;
+}
+#projects .main .container-projects .project-item .details-projects .tag-box img{
+    height: 24px;
+    width: 24px;
 }
 #projects .main .container-projects .project-item .details-projects h2{
-    font-size: 26px;
+    font-size: 18px;
     color: goldenrod;
-    margin-left:2.5vh;
+    margin-left:10px;
     margin-top:0.5vh
 }
-#projects .main .container-projects .project-item .details-projects p{
-    font-size: 22px;
-    margin-top:3vh;
+#projects .main .container-projects .project-item .details-projects ul{
+    font-size: 20px;
+    margin-top:4vh;
     color:white;
-    margin-left:2.5vh;
-    margin-right: 2vh;
+    margin-left:25px;
+    margin-right: 20px;
+    text-align: justify;
 }
-#projects .main .container-projects .project-item .details-projects a{
+#projects .main .container-projects .project-item .details-projects ul .more{
+    display: none;
+}
+#projects .main .container-projects .project-item .details-projects ul .more-2{
+    display: none;
+}
+#projects .main .container-projects .project-item .details-projects .read-more{
+    margin-top: 20px;
+    background: #007bb6;
+    font-size: 22px;
+    outline: none;
+    color: white;
+    border:none;
+    position: relative;
+    left:35%;
+    cursor: pointer;
+    padding: 3px;
+}
+#projects .main .container-projects .project-item .details-projects .project-icons-1{
     position: absolute;
-    bottom: 5vh;
-    margin-left: 2.5vh;
-    height: 50px;
-    width: 50px;
+    bottom: 1vh;
+    left: 0px;
+    height: 40px;
+    width: 40px;
 }
-#projects .main .container-projects .project-item .details-projects a .fa{
+#projects .main .container-projects .project-item .details-projects .project-icons-1:hover{
+    box-shadow: 0px 3px 2px whitesmoke;
+}
+#projects .main .container-projects .project-item .details-projects .project-icons-2{
+    position: absolute;
+    bottom: 1vh;
+    left: 2px;
+    height: 45px;
+    width: 45px;
+}
+#projects .main .container-projects .project-item .details-projects .project-icons-2:hover{
+    box-shadow: 0px 3px 2px whitesmoke;
+}
+#projects .main .container-projects .project-item .details-projects .fa{
     height: 100%;
     width: 100%;
     color: white;
-    font-size: 50px;
+    font-size: 45px;
     text-align: center;
-}
-#projects .main .container-projects .project-item .details-projects a:hover{
-    box-shadow: 0px 3px 2px whitesmoke;
 }
 #projects .main .container-projects .project-item .photo-projects{
     width: 50%;
-    height: 370px;
+    height: 470px;
 }
 #projects .main .container-projects .project-item .photo-projects {
     overflow: hidden;
@@ -1211,7 +1252,7 @@ cursor: pointer;
     transition: .3s ease transform;
 }
 
-#projects .main .container-projects .project-item:hover img{
+#projects .main .container-projects .project-item:hover .photo-projects img{
     transform: scale(1.2);
 }
 
