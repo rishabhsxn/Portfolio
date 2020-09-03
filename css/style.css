@@ -287,7 +287,7 @@ body{
     justify-content: center;
     position: absolute;
     left:13%;
-    z-index: 2;
+    z-index: 2;   
 }
 
 #home .wrapper-home-1 h1{
@@ -299,8 +299,7 @@ body{
 #home .wrapper-home-1 .swipe-in{
     width: max-content;
     position: relative;
-    top:0px;
-    
+    top:0px;    
 }
 
 #home .wrapper-home-1 .swipe-in:after{
@@ -314,8 +313,7 @@ body{
     bottom: 0;
     z-index: 1;
     background: linear-gradient(to right,black, rgb(255, 183, 0));
-    animation: animate1 1s ease-out 5s forwards ;
-    
+    animation: animate1 1s ease-out 5s forwards ;    
 }
 
 #home .wrapper-home-1 .swipe-in .text{
@@ -372,8 +370,7 @@ body{
 
 #home .wrapper-home-1 .swipe-in3 .text3{
     opacity: 0;
-    animation: appear3 0.01s linear 8.2s  forwards;
-    
+    animation: appear3 0.01s linear 8.2s  forwards; 
 }
 
 @keyframes animate1{
@@ -1699,7 +1696,7 @@ transition: .5s;
 }
 
 
-@media (min-width:700px) and (max-width: 1199px){
+@media (min-width:501px) and (max-width: 1199px){
     #header .header .list{
         display: none;
     }
@@ -1725,18 +1722,58 @@ transition: .5s;
 }
 
 
-@media (max-width:699px){
+@media (max-width:500px){
     #header .nav-bar .brand img{
         position: absolute;
         left:30px;
         top: 0.5vh;
         height:8vh;
      }
-    #loading{
+    #coming-soon{
         display: none;
+    } 
+
+    /*-----home --------*/
+    #home .home-1-outside{
+        position: absolute;
+        left:35%;
+        top:25vh;
+        height: max-content;
+        width: 40%;
     }
-    #home{
-        display: none;
+    #home .wrapper-home-1 .swipe-in .text{
+        font-size: 3em;
+    }
+    #home .wrapper-home-1 .swipe-in2 .text2{
+        font-size: 3em;
+    }
+    #home .wrapper-home-1 .swipe-in3 .text3{
+        font-size: 3em;
+    }
+    #home .home-2-outside{
+        position: absolute;
+        top:70vh;
+        right: 4%;
+        width: 70%;
+        height: max-content;
+    }
+    #home .wrapper-home-2 h1{
+        font-size: 1.8em;
+    }
+    #home .wrapper-home-2 span:after{
+        font-size: 1.8em;
+    }
+    #home .wrapper-home-2 .home-icons img{
+        height: 32px;
+        width: 32px;
+        position: relative;
+        left:18%;
+    }
+    #home .wrapper-home-3 h1{
+        position: relative;
+        top:2.2vh;
+        font-size: 0.9em;
+        letter-spacing: -1px;
     }
     #about{
         display: none;
