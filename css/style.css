@@ -1790,7 +1790,7 @@ transition: .5s;
         top: 2.2vh;
     }
     /*------about---------*/
-    #about{
+    /* #about{
         display: flex;
         flex-direction: column;
         height: max-content;
@@ -1879,7 +1879,7 @@ transition: .5s;
     }
     #about .right-about .years-coding{
         display: none;
-    }
+    } */
     #skills{
         display: none;
     }
