@@ -1793,7 +1793,7 @@ transition: .5s;
     #about{
         display: flex;
         flex-direction: column;
-        height: max-content;
+        height: 1020px;
     }
     #about .background-about{
         display: none;
@@ -1833,13 +1833,15 @@ transition: .5s;
     }
     #about .right-about{
         width: 100%;
-        height: max-content;
+        height: 820px;
+        display: flex;
         flex-direction: column;
+        position: relative;
     }
     #about .right-about .details-about{
         width: 100%;
         height: max-content;
-        position: relative;
+        position: absolute;
         top:5vh;
     }
     #about .right-about .details-about h1{
@@ -1870,11 +1872,42 @@ transition: .5s;
     #about  .right-about .details-about .resume-about{
         height: 40px;
         width: 100px;
-        left:37%;
+        left:32%;
         font-size: 16px;
     }
     #about .right-about .years-coding{
-        display: none;
+        width:100%;
+        position: absolute;
+        bottom: 0vh;
+        background: darkgoldenrod;
+    }
+    #about .right-about .years-coding .circle-3-about{
+        width:50px ;
+        height: 50px;
+        border-radius: 50%;
+        background: blanchedalmond;
+        position: absolute;
+        bottom: 29vh;
+        left: 40%;
+    }
+    #about .right-about .years-coding .circle-3-about h1{
+        font-size: 35px;
+        text-align: center;
+        position: relative;
+        top:10%;
+        color: black;
+    }
+    #about .right-about .years-coding .para-3-about{
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+        color: whitesmoke;
+        position: absolute;
+        bottom: 0vh;
+        font-family: "brokenz";
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
     }
     #skills{
         display: none;
