@@ -302,7 +302,7 @@ body{
     bottom: 0;
     z-index: 1;
     background: linear-gradient(to right,black, rgb(255, 183, 0));
-    animation: animate1 1s ease-out 5s forwards ;    
+    animation: animate1 1s ease-out 4s forwards ;    
 }
 
 #home .wrapper-home-1 .swipe-in .text{
@@ -311,7 +311,7 @@ body{
     text-align: start;
     font-size: 3.8em;
     opacity: 0;
-    animation: appear1 0.01s linear 5.5s  forwards;;
+    animation: appear1 0.01s linear 4.5s  forwards;;
 }
 
 #home .wrapper-home-1 .swipe-in2{
@@ -331,7 +331,7 @@ body{
     bottom: 0;
     z-index: 1;
     background: linear-gradient(to right,black, rgb(255, 183, 0));
-    animation: animate2 1s ease-out 6.6s forwards ;
+    animation: animate2 1s ease-out 5.6s forwards ;
 }
 
 #home .wrapper-home-1 .swipe-in2 .text2{
@@ -340,7 +340,7 @@ body{
     text-align: start;
     font-size: 3.8em;
     opacity: 0;
-    animation: appear2 0.01s linear 7.1s  forwards;
+    animation: appear2 0.01s linear 6.1s  forwards;
 }
 
 #home .wrapper-home-1 .swipe-in3{
@@ -360,16 +360,15 @@ body{
     bottom: 0;
     z-index: 2;
     background: linear-gradient(to right,black, rgb(255, 183, 0)    );
-    animation: animate3 1s ease-out 7.7s forwards ;
+    animation: animate3 1s ease-out 6.7s forwards ;
 }
-
 #home .wrapper-home-1 .swipe-in3 .text3{
     color: whitesmoke;
     letter-spacing: 1px;
     text-align: start;
     font-size: 3.8em;
     opacity: 0;
-    animation: appear3 0.01s linear 8.2s  forwards; 
+    animation: appear3 0.01s linear 7.2s  forwards; 
 }
 
 @keyframes animate1{
@@ -1744,6 +1743,9 @@ transition: .5s;
         font-size: 30px;
     }
     /*-----home --------*/
+    #home{
+        background: #ff0000;
+    }
     #home .home-1-outside{
         height: max-content;
         width: 100%;
@@ -1792,11 +1794,15 @@ transition: .5s;
         font-size: 1.2em;
         top: 2.2vh;
     }
+    .background-home{
+        display: none;
+    }
     /*------about---------*/
     #about{
         display: flex;
         flex-direction: column;
-        height: 1162px;
+        height: max-content;
+        background: #007bb6;
     }
     #about .background-about{
         display: none;
