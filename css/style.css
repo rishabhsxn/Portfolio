@@ -50,19 +50,14 @@ body{
     background: black;
     z-index: 99999;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#loading .loader{
-    display: flex;
-    flex-direction: column;
-}
-#loading .loader .fa{
+#loading .fa{
     height: 100px;
     width: 100px;
     animation: animate-loader 2s linear infinite;
-    position: relative;
-    left: 30px;
 }
 
 @keyframes animate-loader{
@@ -80,7 +75,7 @@ body{
     }
 }
 
-#loading .loader span{
+#loading span{
     color: whitesmoke;
     font-size: 40px;
 }
@@ -1739,7 +1734,15 @@ transition: .5s;
     #coming-soon{
         display: none;
     } 
-
+    #loading .fa{
+        height: 70px;
+        width: 70px;
+        font-size: 60px;
+    }
+    #loading span{
+        color: whitesmoke;
+        font-size: 30px;
+    }
     /*-----home --------*/
     #home .home-1-outside{
         height: max-content;
@@ -1793,7 +1796,7 @@ transition: .5s;
     #about{
         display: flex;
         flex-direction: column;
-        height: 1020px;
+        height: 1162px;
     }
     #about .background-about{
         display: none;
@@ -1801,6 +1804,8 @@ transition: .5s;
     #about .left-about{
         width: 100%;
         height: max-content;
+        position: absolute;
+        top:30px
     }
     #about .photo-wrapper-about{
         width: 44%;
@@ -1836,59 +1841,56 @@ transition: .5s;
         height: 820px;
         display: flex;
         flex-direction: column;
-        position: relative;
+        position: absolute;
+        top:220px
     }
     #about .right-about .details-about{
         width: 100%;
         height: max-content;
-        position: absolute;
-        top:5vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     #about .right-about .details-about h1{
-        width: 100%;
-        text-align: center;
         font-size: 30px;
     }
     #about .right-about .details-about hr{
-        position: relative;
-        left:90px;
+        position: static;
         width:50%;
         height:3px;
     }
     #about .right-about .details-about p{
         font-size: 19px;
-        width: 80%;
+        width: 60%;
         padding-right: 0px;
-        margin-left: 44px;
     }
     #about .right-about .details-about p .para-head{
         font-size: 30px;
     }
     #about .right-about .details-about p a{
-        font-size: 25px;
+        font-size: 20px;
         position: relative;
         left: 0px;
     }
     #about  .right-about .details-about .resume-about{
         height: 40px;
         width: 100px;
-        left:32%;
+        position: relative;
         font-size: 16px;
     }
     #about .right-about .years-coding{
         width:100%;
-        position: absolute;
-        bottom: 0vh;
-        background: darkgoldenrod;
+        height: 240px;
+        position: relative;
+        top:100px;
+        align-items: center;
+        justify-content: center;
     }
     #about .right-about .years-coding .circle-3-about{
         width:50px ;
         height: 50px;
         border-radius: 50%;
-        background: blanchedalmond;
-        position: absolute;
-        bottom: 29vh;
-        left: 40%;
+        position: static
     }
     #about .right-about .years-coding .circle-3-about h1{
         font-size: 35px;
@@ -1900,14 +1902,8 @@ transition: .5s;
     #about .right-about .years-coding .para-3-about{
         width: 100%;
         font-size: 30px;
-        text-align: center;
-        color: whitesmoke;
-        position: absolute;
-        bottom: 0vh;
-        font-family: "brokenz";
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+        position: static;
+        margin-top: 10px;
     }
     #skills{
         display: none;
