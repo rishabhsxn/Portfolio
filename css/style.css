@@ -1836,8 +1836,7 @@ transition: .5s;
     }
     #about .left-about .icons-list li a .fa{
         font-size: 20px;
-        position: relative;
-        top:-2px
+        line-height: calc(50px - 30px);
     }
     #about .right-about{
         width: 100%;
