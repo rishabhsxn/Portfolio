@@ -1829,14 +1829,14 @@ transition: .5s;
         left: 0px;
     }
     #about .left-about .icons-list li a{
-        width: 30px;
-        height: 30px;
+        width: 32px;
+        height: 32px;
         position: relative;
         left: 20px;
     }
     #about .left-about .icons-list li a .fa{
-        font-size: 20px;
-        line-height: calc(50px - 30px);
+        font-size: 23px;
+        line-height: calc(50px - 31px);
     }
     #about .right-about{
         width: 100%;
