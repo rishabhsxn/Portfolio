@@ -1797,7 +1797,7 @@ transition: .5s;
     /*------about---------*/
     #about{
         flex-direction: column;
-        height: max-content;
+        height: 1160px;
         background: #007bb6;
     }
     #about .background-about{
@@ -1823,20 +1823,9 @@ transition: .5s;
         top:5px;
     }
     #about .left-about .icons-list{
-        position: relative;
-        top:20px;
-        left: 0px;
+        position: static;
+        width: 70%;
     }
-    /* #about .left-about .icons-list li a{
-        width: 32px;
-        height: 32px;
-        position: relative;
-        left: 20px;
-    }
-    #about .left-about .icons-list li a .fa{
-        font-size: 23px;
-        line-height: calc(50px - 31px);
-    } */
     #about .right-about{
         width: 100%;
         height: 820px;
@@ -1910,8 +1899,34 @@ transition: .5s;
         position: static;
         margin-top: 10px;
     }
-    #skills{
-        display: none;
+    /*-------------skills ------*/
+    #skills .container-skills .skill{
+        width: 100%;
+    }
+    #skills .container-skills .skill .details-skill{
+        border-right: 2px solid whitesmoke;
+    }
+    #skills .container-skills .skill .details-skill h1{
+        font-size: 18px;
+        color: white;
+    }
+    #skills .container-skills .skill .details-skill img{
+        height: 23px;
+        right:2%;
+        top:2%
+    }
+    #skills .container-skills .skill .bar-skills h1{
+        font-size:12px;
+    }
+    #skills .container-skills .skill .bar-skills .bar{
+        width: 65%;
+    }
+    #skills .container-skills .skill .bar-skills .percent{
+        font-size: 14px;
+    }
+    #skills .container-skills .skill .bar-skills .sign{
+        color:whitesmoke;
+        font-size: 11px;
     }
     #projects{
         display: none;
