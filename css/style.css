@@ -1796,7 +1796,6 @@ transition: .5s;
     }
     /*------about---------*/
     #about{
-        display: flex;
         flex-direction: column;
         height: max-content;
         background: #007bb6;
@@ -1828,7 +1827,7 @@ transition: .5s;
         top:20px;
         left: 0px;
     }
-    #about .left-about .icons-list li a{
+    /* #about .left-about .icons-list li a{
         width: 32px;
         height: 32px;
         position: relative;
@@ -1837,7 +1836,7 @@ transition: .5s;
     #about .left-about .icons-list li a .fa{
         font-size: 23px;
         line-height: calc(50px - 31px);
-    }
+    } */
     #about .right-about{
         width: 100%;
         height: 820px;
