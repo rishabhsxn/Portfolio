@@ -213,7 +213,7 @@ body{
 	z-index: 100;
 	cursor: pointer;
 	transform: scale(.8);
-	margin-right: 20px;
+	margin-right:  10px;
 }
 #header .hamburger:after {
 	position: absolute;
@@ -1733,8 +1733,8 @@ transition: .5s;
     #header .nav-bar .brand img{
         position: absolute;
         left:15px;
-        top: 0.8vh;
-        height:8vh;
+        top: 0.6vh;
+        height:7.5vh;
      }
     #coming-soon{
         display: none;
@@ -1768,10 +1768,10 @@ transition: .5s;
         z-index: 2;
     }
     #home .wrapper-home-2 h1{
-        font-size: 1.7em;
+        font-size: 1.6em;
     }
     #home .wrapper-home-2 span:after{
-        font-size: 1.7em;
+        font-size: 1.6em;
     }
     #home .home-2-outside .home-icons img{
         height: 35px;
@@ -1790,7 +1790,7 @@ transition: .5s;
         top: 2.2vh;
     }
     /*------about---------*/
-    /* #about{
+    #about{
         display: flex;
         flex-direction: column;
         height: max-content;
@@ -1801,11 +1801,6 @@ transition: .5s;
     #about .left-about{
         width: 100%;
         height: max-content;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 2;
     }
     #about .photo-wrapper-about{
         width: 44%;
@@ -1817,8 +1812,8 @@ transition: .5s;
     }
     #about .photo-wrapper-about:after{
         position: absolute;
-        left:-22px;
-        top:8px;
+        left:-20px;
+        top:5px;
     }
     #about .left-about .icons-list{
         position: relative;
@@ -1835,12 +1830,12 @@ transition: .5s;
         top:-2px
     }
     #about .right-about{
-        width: 98%;
+        width: 100%;
         height: max-content;
         flex-direction: column;
     }
     #about .right-about .details-about{
-        width: 90%;
+        width: 100%;
         height: max-content;
         position: relative;
         top:5vh;
@@ -1852,16 +1847,15 @@ transition: .5s;
     }
     #about .right-about .details-about hr{
         position: relative;
-        left:80px;
+        left:90px;
         width:50%;
         height:3px;
     }
     #about .right-about .details-about p{
-        text-align: start;
         font-size: 19px;
-        width: 100%;
-        padding-left: 27px;
+        width: 80%;
         padding-right: 0px;
+        margin-left: 35px;
     }
     #about .right-about .details-about p .para-head{
         font-size: 30px;
@@ -1874,12 +1868,12 @@ transition: .5s;
     #about  .right-about .details-about .resume-about{
         height: 40px;
         width: 100px;
-        left:100px;
+        left:37%;
         font-size: 16px;
     }
     #about .right-about .years-coding{
         display: none;
-    } */
+    }
     #skills{
         display: none;
     }
