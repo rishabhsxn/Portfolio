@@ -624,8 +624,8 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     z-index: 2;
 }
 #about .photo-wrapper-about{
@@ -698,7 +698,7 @@ transition: .5s;
   }
   
 #about .left-about .icons-list li:nth-child(2) a:hover .fa {
-    color: black;
+    color: rgb(236, 8, 8);
   }
   
 #about .left-about .icons-list li:nth-child(3) a:hover .fa {
@@ -1807,25 +1807,73 @@ transition: .5s;
         width: 100%;
         height: max-content;
         position: absolute;
-        top:30px
+        top:30px;
+        background: darkgoldenrod;
     }
     #about .photo-wrapper-about{
-        width: 44%;
+        width: 42%;
         position: relative;
-        left: 20px;
+        left: 0;
+        z-index: 2;
+        background: darkgreen;
     }
     #about .photo-wrapper-about img{
         width: 100%;
     }
     #about .photo-wrapper-about:after{
+        content: '';
+        border: 5px solid rgba(255, 183, 0, 0.849);
         position: absolute;
-        left:-20px;
-        top:5px;
+        left:-33px;
+        top:24px;
+        width: 90%;
+        height: 99%;
+        z-index: -1;
     }
     #about .left-about .icons-list{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         position: static;
-        width: 70%;
+        background: darkmagenta;
+        margin-top: 10px;
     }
+    #about .left-about .icons-list li{
+        list-style: none;
+        margin:5px
+    }
+    #about .left-about .icons-list li a {
+    position: relative;
+    width:35px;
+    height:35px;
+    display:block;
+    text-align:center;
+    margin-right: 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration:none;
+    box-shadow: 0 7px 20px rgba(255, 255, 255, 0.507);
+    background: rgb(255, 255, 255);
+    transition: .5s;
+    }
+    #about .left-about .icons-list li a:hover {
+        box-shadow: 0 2px 5px rgba(0,0,0,0.8);
+        text-decoration:none;
+      }
+      
+    #about .left-about .icons-list li a .fa {
+        width: 100%;
+        height:100%;
+        background: linear-gradient(30deg, #fff, rgb(168, 159, 159));
+        border-radius: 50%;
+        line-height: calc(60px - 35px);
+        font-size:25px;
+        color: #262626;
+        transition: .5s;
+      }
     #about .right-about{
         width: 100%;
         height: 820px;
