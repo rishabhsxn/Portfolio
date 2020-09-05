@@ -1750,13 +1750,13 @@ transition: .5s;
         top:25vh; 
     }
     #home .wrapper-home-1 .swipe-in .text{
-        font-size: 2.8em;
+        font-size: 3em;
     }
     #home .wrapper-home-1 .swipe-in2 .text2{
-        font-size: 2.8em;
+        font-size: 3em;
     }
     #home .wrapper-home-1 .swipe-in3 .text3{
-        font-size: 2.8em;
+        font-size: 3em;
     }
     #home .home-2-outside{
         height: max-content;
@@ -1768,16 +1768,16 @@ transition: .5s;
         z-index: 2;
     }
     #home .wrapper-home-2 h1{
-        font-size: 1.6em;
+        font-size: 1.7em;
     }
     #home .wrapper-home-2 span:after{
-        font-size: 1.6em;
+        font-size: 1.7em;
     }
     #home .home-2-outside .home-icons img{
         height: 35px;
         width: 35px;
         position: relative;
-        left: 7%;
+        left: 8%;
     }
     #home .wrapper-home-3 .first-home{
         width: 25%;
@@ -1805,7 +1805,7 @@ transition: .5s;
     #about .photo-wrapper-about{
         width: 44%;
         position: relative;
-        left: 0px;
+        left: 20px;
     }
     #about .photo-wrapper-about img{
         width: 100%;
@@ -1823,6 +1823,8 @@ transition: .5s;
     #about .left-about .icons-list li a{
         width: 30px;
         height: 30px;
+        position: relative;
+        left: 20px;
     }
     #about .left-about .icons-list li a .fa{
         font-size: 20px;
@@ -1855,7 +1857,7 @@ transition: .5s;
         font-size: 19px;
         width: 80%;
         padding-right: 0px;
-        margin-left: 35px;
+        margin-left: 44px;
     }
     #about .right-about .details-about p .para-head{
         font-size: 30px;
