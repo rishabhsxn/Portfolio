@@ -1798,14 +1798,12 @@ transition: .5s;
     #about{
         display: flex;
         flex-direction: column;
-        height: 1200px;
-        background: #007bb6;
+        height: 1150px;
     }
     #about .background-about{
         display: none;
     }
     #about .left-about{
-        background: #e4405f;
         width: 100%;
         height: max-content;
         position: absolute;
@@ -1842,7 +1840,7 @@ transition: .5s;
     #about .right-about{
         width: 100%;
         height: 820px;
-        display: none;
+        display: flex;
         flex-direction: column;
         position: absolute;
         top:220px
@@ -1886,7 +1884,6 @@ transition: .5s;
         font-size: 30px;
     }
     #about .right-about .years-coding{
-        display: none;
         width:100%;
         height: 240px;
         position: relative;
@@ -1901,7 +1898,6 @@ transition: .5s;
         position: static
     }
     #about .right-about .years-coding .circle-3-about h1{
-        display: none;
         font-size: 35px;
         text-align: center;
         position: relative;
@@ -1909,15 +1905,14 @@ transition: .5s;
         color: black;
     }
     #about .right-about .years-coding .para-3-about{
-        display: none;
         width: 100%;
         font-size: 30px;
         position: static;
         margin-top: 10px;
     }
-    #skills{
-        display: none;
-    }
+    /* #skills{
+        display: block;
+    } */
     #projects{
         display: none;
     }
