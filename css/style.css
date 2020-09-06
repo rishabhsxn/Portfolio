@@ -624,8 +624,8 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
     z-index: 2;
 }
 #about .photo-wrapper-about{
@@ -698,7 +698,7 @@ transition: .5s;
   }
   
 #about .left-about .icons-list li:nth-child(2) a:hover .fa {
-    color: rgb(236, 8, 8);
+    color: black;
   }
   
 #about .left-about .icons-list li:nth-child(3) a:hover .fa {
@@ -1796,88 +1796,53 @@ transition: .5s;
     }
     /*------about---------*/
     #about{
+        display: flex;
         flex-direction: column;
-        height: 1160px;
+        height: 1200px;
         background: #007bb6;
     }
     #about .background-about{
         display: none;
     }
     #about .left-about{
+        background: #e4405f;
         width: 100%;
-        height: 300px;
-        position: static;
-        background: darkgoldenrod;
+        height: max-content;
+        position: absolute;
+        top:30px
     }
     #about .photo-wrapper-about{
-        width: 42%;
+        width: 44%;
         position: relative;
-        left: 0;
-        z-index: 2;
-        background: darkgreen;
+        left: 20px;
     }
     #about .photo-wrapper-about img{
         width: 100%;
     }
     #about .photo-wrapper-about:after{
-        display: none;
-        content: '';
-        border: 5px solid rgba(255, 183, 0, 0.849);
         position: absolute;
-        left:-33px;
-        top:24px;
-        width: 90%;
-        height: 99%;
-        z-index: -1;
+        left:-20px;
+        top:5px;
     }
     #about .left-about .icons-list{
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        position: static;
-        background: darkmagenta;
-        margin-top: 40px;
+        position: relative;
+        top:20px;
+        left: 0px;
     }
-    #about .left-about .icons-list li{
-        list-style: none;
-        margin:5px
+    #about .left-about .icons-list li a{
+        width: 32px;
+        height: 32px;
+        position: relative;
+        left: 20px;
     }
-    #about .left-about .icons-list li a {
-    position: relative;
-    width:35px;
-    height:35px;
-    display:block;
-    text-align:center;
-    margin-right: 10px;
-    border-radius: 50%;
-    padding: 6px;
-    box-sizing: border-box;
-    text-decoration:none;
-    box-shadow: 0 7px 20px rgba(255, 255, 255, 0.507);
-    background: rgb(255, 255, 255);
-    transition: .5s;
+    #about .left-about .icons-list li a .fa{
+        font-size: 23px;
+        line-height: calc(50px - 31px);
     }
-    #about .left-about .icons-list li a:hover {
-        box-shadow: 0 2px 5px rgba(0,0,0,0.8);
-        text-decoration:none;
-      }
-      
-    #about .left-about .icons-list li a .fa {
-        width: 100%;
-        height:100%;
-        background: linear-gradient(30deg, #fff, rgb(168, 159, 159));
-        border-radius: 50%;
-        line-height: calc(60px - 35px);
-        font-size:25px;
-        color: #262626;
-        transition: .5s;
-      }
     #about .right-about{
         width: 100%;
         height: 820px;
-        display: flex;
+        display: none;
         flex-direction: column;
         position: absolute;
         top:220px
@@ -1921,6 +1886,7 @@ transition: .5s;
         font-size: 30px;
     }
     #about .right-about .years-coding{
+        display: none;
         width:100%;
         height: 240px;
         position: relative;
@@ -1935,6 +1901,7 @@ transition: .5s;
         position: static
     }
     #about .right-about .years-coding .circle-3-about h1{
+        display: none;
         font-size: 35px;
         text-align: center;
         position: relative;
@@ -1942,39 +1909,14 @@ transition: .5s;
         color: black;
     }
     #about .right-about .years-coding .para-3-about{
+        display: none;
         width: 100%;
         font-size: 30px;
         position: static;
         margin-top: 10px;
     }
-    /*-------------skills ------*/
-    #skills .container-skills .skill{
-        width: 100%;
-    }
-    #skills .container-skills .skill .details-skill{
-        border-right: 2px solid whitesmoke;
-    }
-    #skills .container-skills .skill .details-skill h1{
-        font-size: 18px;
-        color: white;
-    }
-    #skills .container-skills .skill .details-skill img{
-        height: 23px;
-        right:2%;
-        top:2%
-    }
-    #skills .container-skills .skill .bar-skills h1{
-        font-size:12px;
-    }
-    #skills .container-skills .skill .bar-skills .bar{
-        width: 65%;
-    }
-    #skills .container-skills .skill .bar-skills .percent{
-        font-size: 14px;
-    }
-    #skills .container-skills .skill .bar-skills .sign{
-        color:whitesmoke;
-        font-size: 11px;
+    #skills{
+        display: none;
     }
     #projects{
         display: none;
