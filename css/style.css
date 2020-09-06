@@ -1798,17 +1798,17 @@ transition: .5s;
     #about{
         display: flex;
         flex-direction: column;
-        height: 1150px;
-        background: #007bb6;
+        height: 1220px;
+        border-bottom: 2px solid rgb(41, 39, 39) ;
     }
     #about .background-about{
         display: none;
     }
     #about .left-about{
         width: 100%;
-        height: max-content;
+        height: 270px;
         position: absolute;
-        top:30px
+        top:30px;
     }
     #about .photo-wrapper-about{
         width: 44%;
@@ -1840,11 +1840,11 @@ transition: .5s;
     }
     #about .right-about{
         width: 100%;
-        height: 820px;
-        display: none;
+        height: 620px;
+        display: flex;
         flex-direction: column;
         position: absolute;
-        top:220px
+        top:320px
     }
     #about .right-about .details-about{
         width: 100%;
@@ -1852,6 +1852,8 @@ transition: .5s;
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
+        top:3vh
     }
     #about .right-about .details-about h1{
         font-size: 30px;
@@ -1885,17 +1887,16 @@ transition: .5s;
         font-size: 30px;
     }
     #about .right-about .years-coding{
-        display: none;
         width:100%;
-        height: 240px;
+        height: 290px;
         position: relative;
-        top:130px;
+        top:80px;
         align-items: center;
         justify-content: center;
     }
     #about .right-about .years-coding .circle-3-about{
-        width:50px ;
-        height: 50px;
+        width:60px ;
+        height: 60px;
         border-radius: 50%;
         position: static
     }
@@ -1903,7 +1904,7 @@ transition: .5s;
         font-size: 35px;
         text-align: center;
         position: relative;
-        top:10%;
+        top:10px;
         color: black;
     }
     #about .right-about .years-coding .para-3-about{
@@ -1912,8 +1913,46 @@ transition: .5s;
         position: static;
         margin-top: 10px;
     }
-    #skills{
-        display: none;
+    #skills .heading-skills h1{
+        font-size: 6vh;
+    }
+    #skills .container-skills{
+        height: 77vh;
+        top: 21vh;
+    }
+    #skills .container-skills .skill{
+        width: 100%;
+    }
+    #skills .container-skills .skill .details-skill{
+        border-right: 2px solid whitesmoke;
+    }
+    #skills .container-skills .skill .details-skill h1{
+        font-size: 19.5px;
+        position: relative;
+        top:3px;
+        left: 2px;
+    }
+    #skills .container-skills .skill .details-skill img{
+        height: 28px;
+        right: 2%;
+        top:2px
+    }
+    #skills .container-skills .skill .bar-skills h1{
+        font-size:14px;
+        position: relative;
+        top:3px;
+        margin-left: 7%;
+    }
+    #skills .container-skills .skill .bar-skills .bar{
+        margin-left: 7%;
+    }
+    #skills .container-skills .skill .bar-skills .percent{
+        font-size: 15px;
+    }
+    #skills .container-skills .skill .bar-skills .sign{
+        font-size: 12px;
+        position: relative;
+        right: 3px;
     }
     #projects{
         display: none;
