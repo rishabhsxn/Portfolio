@@ -1553,12 +1553,17 @@ cursor: pointer;
     background-color: #2d3436;
     background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
     width: 100%;
+    
+}
+.container-footer{
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.footer img{
+.footer .container-footer img{
     height: 80px;
     width: 80px;
     opacity: 0.7;
@@ -1590,19 +1595,19 @@ cursor: pointer;
 }
 
 
-.footer .right-footer .footer-icons-list{
+.footer .footer-icons-list{
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin-right: 50px;
+    width: max-content;
+    margin-right: 40px;
 }
-.footer .right-footer .footer-icons-list li{
+.footer .footer-icons-list li{
     list-style: none;
     margin:5px
 }
-.footer .right-footer .footer-icons-list li a {
+.footer .footer-icons-list li a {
 position: relative;
 width:35px;
 height:35px;
@@ -1617,12 +1622,12 @@ box-shadow: 0 7px 20px rgba(255, 255, 255, 0.507);
 background: rgb(255, 255, 255);
 transition: .5s;
 }
-.footer .right-footer .footer-icons-list li a:hover {
+.footer .footer-icons-list li a:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.8);
     text-decoration:none;
   }
   
-.footer .right-footer .footer-icons-list li a .fa {
+.footer .footer-icons-list li a .fa {
     width: 100%;
     height:100%;
     background: linear-gradient(30deg, #fff, rgb(168, 159, 159));
@@ -1633,22 +1638,44 @@ transition: .5s;
     transition: .5s;
   }
     
-.footer .right-footer .footer-icons-list li:nth-child(1) a:hover .fa {
+.footer .footer-icons-list li:nth-child(1) a:hover .fa {
     color: #00aced;
   }
   
-.footer .right-footer .footer-icons-list li:nth-child(2) a:hover .fa {
+.footer .footer-icons-list li:nth-child(2) a:hover .fa {
     color: black;
   }
   
-.footer .right-footer .footer-icons-list li:nth-child(3) a:hover .fa {
+.footer .footer-icons-list li:nth-child(3) a:hover .fa {
     color: #007bb6;
   }
   
-.footer .right-footer .footer-icons-list li:nth-child(4) a:hover .fa {
+.footer .footer-icons-list li:nth-child(4) a:hover .fa {
     color: #e4405f;
   }
-
+  .footer .center-footer-2 h1{
+      margin-top: 10px;
+  }
+.footer .center-footer-2 h1{
+    font-size: 18px;
+    color: gold;
+    text-align: center;
+    
+}
+.footer .center-footer-2 h1 span{
+    color: whitesmoke;
+}
+.footer .center-footer-2  h2{
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    
+}
+.footer .center-footer-2 .copyright{
+    font-size:13px;
+    text-align: center;
+    
+}
 
 
 
@@ -1685,6 +1712,9 @@ transition: .5s;
         color: gold;
     }
     #certificates h1{
+        display: none;
+    }
+    .footer .center-footer-2{
         display: none;
     }
 }
@@ -2077,6 +2107,7 @@ transition: .5s;
         width: 100%;
         flex-direction: column;
         justify-content: center;
+        position: fixed;
     }
     #contact .lower-contact .inside-lower-contact .form-contact #success{
         width: 100%;
@@ -2099,40 +2130,35 @@ transition: .5s;
     /* .footer{
         display: none;
     } */
-    .footer img{
+    .footer .container-footer{
+        height: 40%;
+    }
+    .footer .container-footer img{
         height: 40px;
         width: 40px;
         opacity: 0.7;
-        margin-left: 0px;
+        margin-left: 20px;
     }
     .footer .center-footer{
-        position: relative;
-        left:10px
+        display: none;
     }
-    .footer .center-footer h1{
-        font-size:15px
-    }
-    .footer .center-footer  h2{
-        font-size: 14px;
-    }
-    .footer .center-footer .copyright{
-        font-size: 10px;
-    }
-    .footer .right-footer .footer-icons-list{
+    .footer .footer-icons-list{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
         margin-right: 0px;
     }
-    .footer .right-footer .footer-icons-list li a {
-        width: 15px;
-        height: 15px;
+    .footer .footer-icons-list li a{
+        width: 25px;
+        height: 25px;
         margin-right: 0px;
     }
-    .footer .right-footer .footer-icons-list li a .fa{
-        font-size: 10px;
-        background: none;
+    .footer .footer-icons-list li a .fa{
+        font-size: 18px;
         position: relative;
-        bottom: 10px;
-        right:2px
-        
-        
+        bottom: 3.5px;
+        right: 1px;
     }
 }
