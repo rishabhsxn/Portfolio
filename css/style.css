@@ -1360,7 +1360,7 @@ cursor: pointer;
     width: 750px;
     height: 550px;
     background: rgb(0, 0, 0);
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 .swiper-slide img{
@@ -2044,7 +2044,7 @@ transition: .5s;
         display: none;
     }
     .swiper-slide{
-        width: 90%;
+        width: 87%;
         height: 300px;
         margin-bottom: 80px;
     }
