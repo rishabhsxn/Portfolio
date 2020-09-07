@@ -1488,7 +1488,7 @@ cursor: pointer;
     align-items: center;
     position: relative;
 }
-#contact .lower-contact .inside-lower-contact .form-contact #success{
+#contact .lower-contact .inside-lower-contact #success{
     color: rgb(156, 233, 41);
     font-size: 25px;
     position: absolute;
@@ -2063,6 +2063,10 @@ transition: .5s;
         height: 300px;
         margin-bottom: 80px;
     }
+    #contact .lower-contact{
+        background: crimson;
+        height: 75vh;
+    }
     #contact .lower-contact .inside-lower-contact{
         height: 100%;
         width: 100%;
@@ -2071,7 +2075,7 @@ transition: .5s;
         flex-direction: column;
     }
     #contact .lower-contact .inside-lower-contact .contact-details{
-        height: 10vh;
+        height: 9vh;
         width: 90%;
         display: flex;
         flex-direction: row;
@@ -2080,7 +2084,8 @@ transition: .5s;
         position: relative;
         left:0px;
         background: none;
-        margin-top:2vh
+        margin-top:2vh;
+        background: darkblue;
     }
     #contact .lower-contact .inside-lower-contact .contact-details .box-contact{
         display: flex;
@@ -2103,14 +2108,15 @@ transition: .5s;
         color: whitesmoke;
     }
     #contact .lower-contact .inside-lower-contact .form-contact{
-        height: 70vh;
+        height: 62vh;
         width: 100%;
         flex-direction: column;
         justify-content: center;
+        background: darkorange;
     }
-    #contact .lower-contact .inside-lower-contact .form-contact #success{
+    #contact .lower-contact .inside-lower-contact #success{
         width: 100%;
-        font-size: 20px;
+        font-size: 14px;
         text-align: center;
         position: static;
     }
@@ -2125,10 +2131,8 @@ transition: .5s;
     }
     #contact .lower-contact .inside-lower-contact .form-contact form textarea{
         width: 100%;
+        margin-top:5px
     }
-    /* .footer{
-        display: none;
-    } */
     .footer .container-footer{
         height: 40%;
     }
