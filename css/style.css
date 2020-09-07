@@ -2077,7 +2077,7 @@ transition: .5s;
     #contact .lower-contact .inside-lower-contact .contact-details{
         height: 9vh;
         width: 90%;
-        display: flex;
+        display: none;
         flex-direction: row;
         justify-content: space-between;
         box-shadow: 0 1px 1px rgb(68, 68, 68);
@@ -2113,6 +2113,7 @@ transition: .5s;
         flex-direction: column;
         justify-content: center;
         background: darkorange;
+        margin-top: 50px;
     }
     #contact .lower-contact .inside-lower-contact #success{
         width: 100%;
