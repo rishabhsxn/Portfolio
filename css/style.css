@@ -1396,8 +1396,7 @@ cursor: pointer;
     background: black;
     position: relative;
 }
-#contact .upper-contact{
-    
+#contact .upper-contact{   
     height: 23vh;
     width: 100%;
     position: absolute;
@@ -2039,6 +2038,7 @@ transition: .5s;
     #certificates{
         border-top: 2px solid rgb(41, 39, 39) ;
         justify-content: space-around;
+        border-bottom: 2px solid rgb(41, 39, 39) ;
     }
     #certificates .background-certificates{
         display: none;
@@ -2048,8 +2048,69 @@ transition: .5s;
         height: 300px;
         margin-bottom: 80px;
     }
-    #contact{
-        display: none;
+    #contact .lower-contact .inside-lower-contact{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #contact .lower-contact .inside-lower-contact .contact-details{
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        box-shadow: 0 1px 1px rgb(68, 68, 68);
+        position: relative;
+        left:0px;
+        background: none;
+        margin-top:2vh
+    }
+    #contact .lower-contact .inside-lower-contact .contact-details .box-contact{
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        height: 10vh;  
+    }
+    #contact .lower-contact .inside-lower-contact .contact-details .box-contact .icon-contact{
+        color: whitesmoke;
+        margin-right: 10px;
+    }
+    #contact .lower-contact .inside-lower-contact .contact-details .box-contact h3{
+        color: gold;
+        font-weight: bold;
+        font-size: 17px;
+    }
+    #contact .lower-contact .inside-lower-contact .contact-details .box-contact p{
+        font-size: 17px;
+        color: whitesmoke;
+    }
+    #contact .lower-contact .inside-lower-contact .form-contact{
+        height: 70vh;
+        width: 100%;
+        background: rgb(3, 3, 3);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    #contact .lower-contact .inside-lower-contact .form-contact #success{
+        color: rgb(156, 233, 41);
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        position: static;
+    }
+    #contact .lower-contact .inside-lower-contact .form-contact form{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    #contact .lower-contact .inside-lower-contact .form-contact form input{
+        width: 80%;
     }
     .footer{
         display: none;
