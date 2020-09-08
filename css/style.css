@@ -1720,7 +1720,7 @@ transition: .5s;
 }
 
 
-@media (min-width:481px) and (max-width: 1199px){
+@media (min-width:681px) and (max-width: 1199px){
     #header .header .list{
         display: none;
     }
@@ -1749,7 +1749,7 @@ transition: .5s;
 }
 
 
-@media (max-width:480px){
+@media (max-width:680px){
     #header .nav-bar .brand img{
         position: absolute;
         left:15px;
@@ -2064,7 +2064,6 @@ transition: .5s;
         margin-bottom: 80px;
     }
     #contact .lower-contact{
-        background: crimson;
         height: 75vh;
     }
     #contact .lower-contact .inside-lower-contact{
@@ -2077,7 +2076,7 @@ transition: .5s;
     #contact .lower-contact .inside-lower-contact .contact-details{
         height: 9vh;
         width: 90%;
-        display: none;
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
         box-shadow: 0 1px 1px rgb(68, 68, 68);
@@ -2085,7 +2084,6 @@ transition: .5s;
         left:0px;
         background: none;
         margin-top:2vh;
-        background: darkblue;
     }
     #contact .lower-contact .inside-lower-contact .contact-details .box-contact{
         display: flex;
@@ -2112,8 +2110,6 @@ transition: .5s;
         width: 100%;
         flex-direction: column;
         justify-content: center;
-        background: darkorange;
-        margin-top: 50px;
     }
     #contact .lower-contact .inside-lower-contact #success{
         width: 100%;
@@ -2132,7 +2128,6 @@ transition: .5s;
     }
     #contact .lower-contact .inside-lower-contact .form-contact form textarea{
         width: 100%;
-        margin-top:5px
     }
     .footer .container-footer{
         height: 40%;
