@@ -11,10 +11,10 @@
     <script>
         
         window.onload=(function(){
-            function fn1(){
+            function fn2(){
             document.getElementById("loading").style.display="none"
         }
-            setTimeout(fn1,3800)
+            setTimeout(fn2,3800)
         })();
         
     </script>
@@ -429,49 +429,27 @@
                                 <!--contact section-->
         <section id="contact">
             <div class="upper-contact">
-                <div class="heading-contact">
-                    <h1>Get In Touch</h1>
-                    <h2>I'd <i class="fa fa-heart" aria-hidden="true"></i>  to help you</h2>
-                </div>
-                <div class="background-contact"></div>
+                <div class="background-upper"></div>
+                <h1>Get in Touch</h1>
+                <h3>I'd <i class="fa fa-heart" aria-hidden="true"></i> to help you.</h3>
             </div>
-    
             <div class="lower-contact">
-                <div class="inside-lower-contact">
-                    <div class="contact-details">
-                        
-                        <div class="box-contact">
-                            <div class="icon-contact"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></div>
-                            <div class="text-contact">
-                                <h3>Phone</h3>
-                                <p>7017798163</p>
-                            </div>
-                        </div>
-                        <div class="box-contact">
-                            <div class="icon-contact"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></div>
-                            <div class="text-contact">
-                                <h3>Email</h3>
-                                <p>rishabhsxn1998@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <h1 id="success"></h1>
-                    <div class="form-contact">
-                        
-                        <form id="contact-form">
-                            
-                            <input name="name" type="text" class="form-control" placeholder="Your Name" required>
-                            <input name="email" type="email" class="form-control" placeholder="Your Email" required>
-                            <input name="subject" type="text" class="form-control" placeholder="Subject" required>
-                            <textarea name="message" class="form-control" placeholder="Message..." rows="4" required></textarea>
-                            <button name="submit" >Send Message</button>
-    
-                        </form>
-                    </div>
+                <div class="contact-info">
+                    <i class="fa fa-phone" aria-hidden="true"><h2>70177729293</h2></i>
+                    <i class="fa fa-envelope" aria-hidden="true"><h2>rishabhsxn@gmail.com</h2></i>
                 </div>
+
+                <h1 id="success"></h1>
+                <form id="contact-form">
+                    <input name="name" type="name" placeholder="Your Name" required=true>
+                    <input name="email" type="email" placeholder="Email" required=true>
+                    <input name="subject" type="subject" placeholder="Subject" required=true>
+                    <textarea name="messgae" type="message" placeholder="Message..." required=true rows="4"></textarea>
+                    <button name="submit">Send Message</button>
+
+                </form>
             </div>
         </section>
-
 
                                 <!--- end of Contact Section-->
 

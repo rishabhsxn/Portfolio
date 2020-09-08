@@ -1389,162 +1389,117 @@ cursor: pointer;
 
                             /*---contact section */
 
-
 #contact{
-    height: 100vh;
-    width: 100%;
     background: black;
+    height: 700px;
+}
+#contact .upper-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    justify-content: center;
     position: relative;
 }
-#contact .upper-contact{   
-    height: 23vh;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-#contact .upper-contact .background-contact{
+#contact .upper-contact .background-upper{
     background-image: url("https://images.pexels.com/photos/1421903/pexels-photo-1421903.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
     background-position: center center;
     position: absolute;
     left: 0;
-    top:0;
+    top: 0;
     width: 100%;
-    height: 23vh;
-    opacity: 0.5;
+    height:100%;
+    opacity: 0.3;
 }
-#contact .upper-contact .heading-contact{
-    width: 100%;
-    position: absolute;
-    top:9vh;
+.upper-contact h1{
+    color: white;
+    font-size: 50px;
     z-index: 2;
 }
-#contact .upper-contact .heading-contact h1{
-    text-align: center;
-    font-size:46px;
+.upper-contact h3{
     color: whitesmoke;
+    font-size: 22px;
+    z-index: 2;
 }
-#contact .upper-contact .heading-contact h2{
-    text-align: center;
-    font-size: 25px;
-    color: rgb(160, 154, 154);
+.upper-contact h3 .fa{
+    color: red;
 }
-
-
-#contact .lower-contact{
-    height: 77vh;
-    width: 100%;
-    position: absolute;
-    top:23vh;
-    display: flex;
-    justify-content: center;
-}
-#contact .lower-contact .inside-lower-contact{
-    height: 100%;
-    width: 80%;
-    display: flex;
-    align-items: center;
-}
-#contact .lower-contact .inside-lower-contact .contact-details{
-    height: 64%;
-    width: 30%;
+.lower-contact{
+    height:500px ;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 0 5px 5px rgb(68, 68, 68);
-    position: relative;
-    left:60px;
-    background: black;
-    z-index: 3  
-}
-#contact .lower-contact .inside-lower-contact .contact-details .box-contact{
-    display: flex;
     align-items: center;
-    margin-bottom: 30px;
-    height: 10vh;  
 }
-#contact .lower-contact .inside-lower-contact .contact-details .box-contact .icon-contact{
-    color: whitesmoke;
-    margin-right: 15px;
+.lower-contact .contact-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   height: 30px;
+   width: 100%;
+   box-shadow:0 2px 1px rgb(68, 68, 68);
 }
-#contact .lower-contact .inside-lower-contact .contact-details .box-contact h3{
+.lower-contact .contact-info h2{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 20px;
     color: gold;
-    font-weight: bold;
-    font-size: 26px;
 }
-#contact .lower-contact .inside-lower-contact .contact-details .box-contact p{
-    font-size: 20px;
-    color: whitesmoke;
+.lower-contact .contact-info .fa{
+    color: white;
 }
-
-
-
-#contact .lower-contact .inside-lower-contact .form-contact{
-    height: 96%;
-    width: 70%;
-    background: rgb(3, 3, 3);
-    display: flex;
-    align-items: center;
-    position: relative;
+.lower-contact #success{
+    color: rgb(131, 209, 13);
+    font-size: 24px;
 }
-#contact .lower-contact .inside-lower-contact #success{
-    color: rgb(156, 233, 41);
-    font-size: 25px;
-    position: absolute;
-    top:0px
-}
-#contact .lower-contact .inside-lower-contact .form-contact form{
-    width: 70%;
+form{
     display: flex;
     flex-direction: column;
-    margin-left: 180px;
-}
-#contact .lower-contact .inside-lower-contact .form-contact form input{
-    width: 70%;
-    height: 50px;
+    height: 430px;
+    width: 35%;
+    align-items: center;
+    justify-content: space-around;
     border: none;
+    margin-top: 15px;
+}
+form input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(77, 75, 75);
     background: transparent;
-    border-bottom: 2px solid  rgb(44, 44, 44);
-    margin-bottom: 25px;
-    outline: none;
-    color: rgb(235, 229, 229);
-    font-size: 18px;
-}
-#contact .lower-contact .inside-lower-contact .form-contact form input::placeholder{
-    font-size: 15px;
-    color: rgb(207, 201, 201);
-}
-#contact .lower-contact .inside-lower-contact .form-contact form textarea::placeholder{
-    font-size: 15px;
-    color: rgb(207, 201, 201);
-}
-#contact .lower-contact .inside-lower-contact .form-contact form textarea{
-    resize: none;
-    outline: none;
-    border: none;
-    margin-top: 10px;
-    color: whitesmoke;
-    font-size: 18px;
-    background: none;
-    border-bottom: 2px solid rgb(44,44,44);
-}
-
-#contact .lower-contact .inside-lower-contact .form-contact form button{
-    width: 150px;
-    height: 40px;
-    margin-top: 30px;
-    background: black;
-    font-size: 20px;
     color: white;
-    border: 2px solid grey;
+    font-size: 18px;
 }
-
-#contact .lower-contact .inside-lower-contact .form-contact form button:hover{
-    cursor: pointer;
-    box-shadow: 0 2px 2px whitesmoke;
+form textarea{
+    width: 100%;
     border: none;
-}                   /* -----end of contact section--------*/
+    outline: none;
+    border-bottom: 2px solid rgb(80, 77, 77);
+    background: transparent;
+    resize: none;
+    color: white;
+    font-size: 18px;
+}
+form input::placeholder{
+    color: rgb(158, 152, 152);
+    opacity: 0.6;
+    font-size: 14px;
+}
+form textarea::placeholder{
+    color: rgb(158, 152, 152);
+    opacity: 0.6;
+    font-size: 14px;
+}
+form button{
+    padding: 10px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    word-spacing: 3px;
+}
+                                             /* -----end of contact section--------*/
 
                    
                    /*------footer-------------*/
@@ -1568,6 +1523,10 @@ cursor: pointer;
     width: 80px;
     opacity: 0.7;
     margin-left: 50px;
+}
+.footer .center-footer{
+    position: relative;
+    left:60px
 }
 .footer .center-footer h1{
     font-size: 30px;
@@ -2063,71 +2022,29 @@ transition: .5s;
         height: 300px;
         margin-bottom: 80px;
     }
-    #contact .lower-contact{
-        height: 75vh;
+    .upper-contact h1{
+        font-size: 34px;
     }
-    #contact .lower-contact .inside-lower-contact{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+    .upper-contact h3{
+        font-size: 15px;
     }
-    #contact .lower-contact .inside-lower-contact .contact-details{
-        height: 9vh;
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        box-shadow: 0 1px 1px rgb(68, 68, 68);
-        position: relative;
-        left:0px;
-        background: none;
-        margin-top:2vh;
-    }
-    #contact .lower-contact .inside-lower-contact .contact-details .box-contact{
-        display: flex;
-        align-items: center;
-        margin-bottom: 30px;
-        height: 10vh;  
-    }
-    #contact .lower-contact .inside-lower-contact .contact-details .box-contact .icon-contact{
-        color: whitesmoke;
-        margin-right: 4px;
-    }
-    #contact .lower-contact .inside-lower-contact .contact-details .box-contact .icon-contact{
-        font-size: 10px;
-    }
-    #contact .lower-contact .inside-lower-contact .contact-details .box-contact h3{
+    .lower-contact .contact-info h2{
         font-size: 14px;
+        margin-left: 5px;
     }
-    #contact .lower-contact .inside-lower-contact .contact-details .box-contact p{
-        font-size: 14px;
-        color: whitesmoke;
+    .lower-contact #success{
+        font-size: 13px;
+        margin-top: 10px;
     }
-    #contact .lower-contact .inside-lower-contact .form-contact{
-        height: 62vh;
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
+    form{
+        width: 80%;
+        height:420px ;
     }
-    #contact .lower-contact .inside-lower-contact #success{
-        width: 100%;
-        font-size: 14px;
-        text-align: center;
-        position: static;
+    form input{
+        font-size: 16px;
     }
-    #contact .lower-contact .inside-lower-contact .form-contact form{
-        margin-left: 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    #contact .lower-contact .inside-lower-contact .form-contact form input{
-        width: 100%;
-    }
-    #contact .lower-contact .inside-lower-contact .form-contact form textarea{
-        width: 100%;
+    form textarea{
+        font-size: 16px;
     }
     .footer .container-footer{
         height: 40%;
