@@ -3,14 +3,14 @@ $(document).ready(function() {
     $('#skills .container-skills .bar-skills .bar .react').css({
     animation: "animate-react 2s linear forwards",
     });
-    }, { offset: '90%' });
+    }, { offset: '30%' });
 })
 $(document).ready(function() {
     $('#skills .container-skills .bar-skills .bar .java').waypoint(function() {
     $('#skills .container-skills .bar-skills .bar .java').css({
     animation: "animate-android 2s linear forwards",
     });
-    }, { offset: '90%' });
+    }, { offset: '40%' });
 })
 
 $(document).ready(function() {
@@ -18,7 +18,7 @@ $(document).ready(function() {
     $('#skills .container-skills .bar-skills .bar .aws').css({
     animation: "animate-aws 2s linear forwards",
     });
-    }, { offset: '90%' });
+    }, { offset: '55%' });
 })
 
 $(document).ready(function() {
@@ -26,7 +26,7 @@ $(document).ready(function() {
     $('#skills .container-skills .bar-skills .bar .c').css({
     animation: "animate-c 2s linear forwards",
     });
-    }, { offset: '90%' });
+    }, { offset: '65%' });
 })
 
 $(document).ready(function() {
@@ -50,5 +50,5 @@ $(document).ready(function() {
     $('#skills .container-skills .bar-skills .bar .javascript').css({
     animation: "animate-js 2s linear forwards",
     });
-    }, { offset: '92%' });
+    }, { offset: '100%' });
 })
