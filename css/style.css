@@ -1729,6 +1729,9 @@ transition: .5s;
         font-size: 30px;
     }
     /*-----home --------*/
+    #particles-js{
+	    z-index:2
+	}
     #home .home-1-outside{
         height: max-content;
         width: 100%;
